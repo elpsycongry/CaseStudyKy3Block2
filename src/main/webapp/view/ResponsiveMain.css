@@ -1,6 +1,8 @@
 /* PC */
 @media (min-width: 1024px) {
-    
+    li.mobile-menu-btn-test {
+        float: right;
+    }
 }
 
 /*Tablet*/
@@ -10,5 +12,10 @@
 
 /*Mobile*/
 @media (max-width: 740px) {
-    
+    #nav > li {
+         display: block;
+    }
+    #nav .mobile-menu-btn{
+
+    }
 }

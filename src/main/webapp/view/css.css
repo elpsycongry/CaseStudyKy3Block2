@@ -9,6 +9,7 @@
 
 /* Common */
 
+
 .text-white {
     color: white;
 }
@@ -58,6 +59,9 @@
 .float-right {
     float: right;
 }
+.float-right-t {
+    float: right;
+}
 
 .mb-8 {
     margin-bottom: 8px;
@@ -105,17 +109,13 @@ html{
     padding: 0 24px;
     display: block;
 }
-
-#nav .searchIcon{
-    float: right;
-    color: white;
-}
-
 #nav .subNav li:hover a,
 #nav > li:hover > a {
     color: black;
     background-color: lightgrey;
 }
+
+
 #nav .searchIcon:hover a {
     color: white;
     background-color: #f44336;
@@ -140,6 +140,7 @@ html{
     background: url("https://www.w3schools.com/w3images/chicago.jpg") top center / cover no-repeat;
     position: relative;
 }
+
 #slider .sliderBottom {
     left: 50%;
     padding: 32px 16px;
@@ -148,13 +149,12 @@ html{
     bottom: 0;
     transform: translateX(-50%);
     text-align: center;
-
     /*my solution*/
-/*    left:0;
-    right:0;
-    bottom: 0;
-    margin: auto;
-    width: 40%;*/
+    /*    left:0;
+        right:0;
+        bottom: 0;
+        margin: auto;
+        width: 40%;*/
 }
 #slider .sliderBottom h2 {
     margin: 10px 0;
