@@ -9,8 +9,9 @@
 <head>
     <meta charset="UTF-8">
     <title>The Band</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="view/css.css">
-    <link rel="stylesheet" href="view/ResponsiveMain.css"
+    <link rel="stylesheet" href="view/ResponsiveMain.css">
     <script src="https://kit.fontawesome.com/39e48099af.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,17 +30,20 @@
                     <li><a href="#" class="text-black">Media</a></li>
                 </ul>
             </li>
+            <li class="float-right-t">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
             <c:choose>
                 <c:when test="${sessionScope.role.equals('admin') || sessionScope.role.equals('member') }">
                     <li class="float-right "><a href="/sessionController">Logout</a></li>
-                    <li class="float-right "><a href="/cart-controller">MyCart</a></li>
+                    <li ><a href="/cart-controller">MyCart</a></li>
                 </c:when>
                 <c:otherwise>
                     <li class="float-right"><a href="/login_logout/login.jsp">Login</a></li>
                 </c:otherwise>
             </c:choose>
-
         </ul>
+
     </div>
     <div id="slider">
         <div class="sliderBottom">
